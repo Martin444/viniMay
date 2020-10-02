@@ -60,4 +60,12 @@ const Following = styled.div`
         margin: 10px;
         cursor:pointer; 
     }
+
+    @media screen and (max-width: 769px){
+        padding: 0;
+        margin: 0;
+        .Img1, .Img2{
+            display: none;
+        }
+    }
 `
