@@ -16,6 +16,10 @@ export default function Footer() {
                 <p>Normas de publicidad </p>
                 <p>Pautas de la marca</p>
             </div>
+            <div className='pab'>
+                <h1>COMUNIDAD</h1>
+                <p>Preguntas frecuentes</p>
+            </div>
                 
             
         </Foote>
@@ -25,8 +29,10 @@ export default function Footer() {
 
 const Foote = styled.div`
     background-color: #A8C813;
+    padding: 1rem 2rem;
     display: flex;
     width: 100%;
+    justify-content: space-between;
     h1{
         color: #fff;
     }
@@ -50,5 +56,7 @@ const Foote = styled.div`
 
     @media screen and (max-width: 760px){
         display:block;
+        margin: 0;
+        padding: 1rem 2rem;
     }
 `

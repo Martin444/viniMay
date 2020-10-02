@@ -51,6 +51,15 @@ export default function NavBar() {
                                 </a>
                             </li>
                         </button>
+                        <button type="button"  
+                        onClick={handleToggle}
+                        className="nav-btn2">
+                            <li>
+                                <a>
+                                    Descarga
+                                </a>
+                            </li>
+                        </button>
                         
                     </ul>
                 </div>
@@ -110,7 +119,7 @@ const NavBar2 = styled.div`
             font-size: 28px;
             text-decoration: none;
             padding: .5rem 0;
-            color: #fff;
+            color: #A8C813;
             transition: all 0.3s linear;
             text-align: right;
             /* font-size: 1rem; */
@@ -119,7 +128,7 @@ const NavBar2 = styled.div`
             font-weight: 400;
             }
             .nav-links a:hover {
-                color: #A8C813; 
+                color: #fff; 
             cursor: pointer;
             }
 

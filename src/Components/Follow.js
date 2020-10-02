@@ -18,11 +18,10 @@ export default function Follow() {
                 <img src={Mock3} alt='com' className='Img3'/>
                 <h1>¡SEGUINOS EN NUESTRAS REDES!</h1>
                 <div>
-                <img src={red1} alt='com' className='redImg'/>
-                <img src={red2} alt='com' className='redImg'/>
-                <img src={red3} alt='com' className='redImg'/>
-                <img src={red4} alt='com' className='redImg'/>
-
+                    <img src={red1} alt='com' className='redImg'/>
+                    <img src={red2} alt='com' className='redImg'/>
+                    <img src={red3} alt='com' className='redImg'/>
+                    <img src={red4} alt='com' className='redImg'/>
                 </div>
             </div>
             <div className='moc2'>
@@ -55,7 +54,6 @@ const Following = styled.div`
     }
 
     .redImg{
-    
         height: 3rem;
         margin: 10px;
         cursor:pointer; 

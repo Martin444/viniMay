@@ -5,7 +5,9 @@ import AndroidImg from '../images/archivos-05.png'
 import IOSImg from '../images/archivos-06.png'
 import styled from 'styled-components'
 import InfoCollection from '../Components/inicio/infoColection'
-import Follow from '../Components/Follow'
+import Options from '../Components/Options'
+import Download from '../Components/Download'
+import FanMap from '../Components/inicio/FanMap'
 
 export default function Inicio() {
     return (
@@ -30,8 +32,9 @@ export default function Inicio() {
                 </div>
             </DivHome>
             <InfoCollection/>
-
-            <Follow/>
+            <Options/>
+            <FanMap/>
+            <Download/>
         </div>
     )
 }
@@ -53,32 +56,35 @@ const DivHome = styled.div`
     }
 
     .line1{
-        font-size: 30px;
+        font-size: 45px;
         
         -webkit-text-fill-color:  #171E36; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
         color: #171E36;
+        margin:0;
             }
             .line2{
-                font-size:35px;
+                font-size:45px;
                 color: white;
+                margin:0;
             }
             .line3{
-                font-size: 45px;
+                font-size: 55px;
                 color:#A8C813;
+                margin:0;
             }
 
     .content{
         font-family: 'Montserrat', sans-serif!important;
         /* font-style: italic; */
-        padding-top:8rem;
+        padding-top:3rem;
         display:flex;
         text-align: center;
         align-content: center;
         align-items: center;
     }
-
+    
     .title{
         flex:1;
         text-align: center;
@@ -91,6 +97,7 @@ const DivHome = styled.div`
     }
     
     .ImgMoc{
+        padding-top:5rem;
         height: 40em;
         filter: drop-shadow(6px 16px 35px rgba(0, 0, 0, .5));
     }
