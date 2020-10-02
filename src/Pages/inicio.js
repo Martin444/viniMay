@@ -135,6 +135,7 @@ const DivHome = styled.div`
             /* height: 669px; */
             /* margin-right: 50px; */
             /* text-align: center; */
+            padding-top:8rem;
             display:block;
         }
 
@@ -167,10 +168,10 @@ const DivHome = styled.div`
         }
 
         .android{
-            height: 60px;
+            height: 70px;
         }
         .Ios{
-            height: 60px;
+            height: 70px;
         }
            
     }

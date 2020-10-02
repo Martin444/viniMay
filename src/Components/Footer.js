@@ -31,7 +31,6 @@ const Foote = styled.div`
     background-color: #A8C813;
     padding: 1rem 2rem;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     h1{
         color: #fff;

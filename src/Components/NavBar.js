@@ -39,16 +39,14 @@ export default function NavBar() {
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li>
-                                <Link to="/clases">Comunidad</Link>
+                                <Link to="/comunidad">Comunidad</Link>
                             </li>
                         </button>
                         <button type="button"  
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li>
-                                <a>
-                                    Contacto
-                                </a>
+                            <Link to="/contacto">Contacto</Link>
                             </li>
                         </button>
                         <button type="button"  
