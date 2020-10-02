@@ -28,7 +28,7 @@ export default function NavBar() {
                         </button>
                     </div>
                     <ul className={isOpen?"nav-links show-nav":"nav-links"}>
-                         <button type="button"  
+                         <button type="button"
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li>
@@ -66,22 +66,25 @@ export default function NavBar() {
 }
 
 const NavBar2 = styled.div`
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 0.75rem 0.20rem;
+        background: linear-gradient(to top, rgba(42, 53, 90, 0.7), #171E36);
+
+        /* padding: 0.75rem 0.20rem; */
         z-index: 1;
-        
-        :hover{
-            color: #A8C813; 
-        }
 
         .imgLogo{
-            margin-top: 10px;
+            margin: 20px;
             height: 30px;
         }
+        
+        .nav-center{
+            padding:0pc;
+            margin:0;
 
+        }
         .nav-header {
             display: flex;
             justify-content: space-between;
@@ -92,36 +95,39 @@ const NavBar2 = styled.div`
             border: none;
             cursor: pointer;
             outline: none;
-            }
-            .nav-btn2 {
+        }
+        .nav-btn2 {
+            margin-bottom: 5px;
                 display:block;
-                background: transparent;
                 border: none;
                 cursor: pointer;
                 outline: none;
-                text-align:center;
+                background: transparent;
             }
-        .nav-icon {
-            font-size: 1.5rem;
-            color: #fff;
+            .nav-icon {
+                font-size: 1.5rem;
+                color: #fff;
             }
-        .nav-links {
+            .nav-links {
+                /* text-align:center; */
+                justify-content:right;
             height: 0;
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
         }
         .nav-links a {
+            background: transparent;
             font-family: 'Montserrat', sans-serif!important;
             font-style: italic;
             font-size: 28px;
             text-decoration: none;
-            padding: .5rem 0;
+            margin-bottom: 10px;
             color: #A8C813;
             transition: all 0.3s linear;
-            text-align: right;
+            text-align: center;
             /* font-size: 1rem; */
-            font-weight: 400;
+            font-weight: 100;
             letter-spacing: 1px;
             font-weight: 400;
             }
@@ -131,19 +137,21 @@ const NavBar2 = styled.div`
             }
 
             .show-nav {
-            height: 150px;
+            height: 160px;
             }
 
             /* Cuando no es para dispositivos moviles */
 
         @media screen and (min-width: 768px){
+            background: linear-gradient(to top, rgba(42, 58, 64, 0.0), #171E36);
+
             .nav-btn {
                 display: none;
 
             }
 
             .imgLogo{
-                    margin-top: 10px;
+                margin: 20px;
                     height: 50px;
                 }
             .nav-btn2 {
@@ -163,11 +171,11 @@ const NavBar2 = styled.div`
             .nav-links {
                 height: auto;
                 display: flex;
-                margin-left: 2rem;
+                margin-left: 0rem;
             }
             .nav-links a {
-                margin: 0 1rem;
-                padding: 0.5rem 0;
+                margin: 0 .5rem;
+                padding: 4.5rem 0;
             }
         }
 `

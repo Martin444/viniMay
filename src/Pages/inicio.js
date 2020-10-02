@@ -51,9 +51,7 @@ const DivHome = styled.div`
     background-image: linear-gradient(to bottom, rgba(23, 30, 54, 0.75), #171E36), url(${Nov});
     background-size: cover;
 
-    .boar{
-        padding-top: 0pc;
-    }
+  
 
     .line1{
         font-size: 45px;
@@ -72,7 +70,7 @@ const DivHome = styled.div`
             .line3{
                 font-size: 55px;
                 color:#A8C813;
-                margin:0;
+                margin:10px;
             }
 
     .content{
@@ -155,7 +153,7 @@ const DivHome = styled.div`
             color: #171E36;
         }
         .line2{
-            font-size:25px;
+            font-size:30px;
             color: white;
         }
         .line3{

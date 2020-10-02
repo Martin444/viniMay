@@ -36,7 +36,7 @@ const Following = styled.div`
         display:flex;
         background: radial-gradient(circle farthest-side,#2A355A,#090C17);
         justify-content: space-between;
-        color: #A8C813; 
+        color: #A8C813;
 
     .Img1{
         height: 20rem;
