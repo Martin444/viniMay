@@ -6,10 +6,10 @@ export default function AcordionTile() {
         <Container>
             <div className='item'>
                 <div className='head'>
-                    <h1>¿CÓMO CARGO MI CAMISETA?</h1>
+                    <h2 className='line3'>¿CÓMO CARGO MI CAMISETA?</h2>
                 </div>
                 <div className='conten'>
-                    <p>oasdiaosdnoaisndaosdnaoisdnaosdnasodnasodnasodinasodinasoin</p>
+                    <p>oasdiaosdnoa isndaosdn aoi sdnaosd nasodn asodnasodi nasod inasoin</p>
                 </div>
             </div>
         </Container>
@@ -18,10 +18,14 @@ export default function AcordionTile() {
 
 
 const Container = styled.div`
+    
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom-color: transparent;
     border-radius: 4px;
+    margin: 0;
+    padding: auto;
     display:block;
+    justify-content: center;
     text-align: center;
     &:hover{
         .conten{
@@ -30,7 +34,7 @@ const Container = styled.div`
     }
     
     .item{
-        text-align: center;
+        text-align: left;
         align-items: center;
         display: block;
         cursor: pointer;
@@ -38,7 +42,7 @@ const Container = styled.div`
     }
 
     .head{
-        text-align: center;
+        text-align: left;
         display: flex;
         cursor: pointer;
         padding: 16px;
@@ -48,5 +52,17 @@ const Container = styled.div`
         display: none;
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         padding: 16px;
+    }
+
+    .line3{
+        font-size: 20px;
+        color:#171E36;
+        margin:0;
+    }
+    h2{
+        font-size: 625px;
+        color:#171E36;
+        padding: 0;
+        margin:0;
     }
 `
