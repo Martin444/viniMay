@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export default function Footer() {
@@ -6,8 +7,9 @@ export default function Footer() {
         <Foote>
             <div className='legal'>
                 <h1>LEGAL</h1>
-                <p>Condiciones de servicio</p>
-                <p>Política de privacidad </p>
+                <Link to='/condiciones'><p>Condiciones de servicio</p></Link>
+                <Link to='/privacidad'><p>Política de privacidad </p></Link>
+                
                 <p>Denunciar una infracción</p>
             </div>
             <div className='pab'>
