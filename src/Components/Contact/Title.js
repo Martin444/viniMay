@@ -1,19 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Title() {
+export default function Titles() {
     return (
-        <Titles>
-            <h1 className='line3'>DEJANOS TU MENSAJE</h1>
+        <Title>
+            <p className='line3'>DEJANOS TU MENSAJE</p>
             <p className='line2'>¡ESTE EQUIPO LO FORMAMOS ENTRE TODOS!</p>
-        </Titles>
+        </Title>
     )
 }
 
-const Titles = styled.div`
+const Title = styled.div`
     display: block;
+    text-align:center;
     padding: 1rem 0rem 1rem;
 
+    
     .line3{
         font-size: 35px;
         color:#A8C813;
@@ -21,7 +23,6 @@ const Titles = styled.div`
     .line2{
         font-size: 35px;
         color:#171E36;
-        padding: 0;
         margin:0;
     }
 `

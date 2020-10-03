@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Box() {
     return (
         <Boxe>
-            Soy un boc
+            
         </Boxe>
     )
 }
