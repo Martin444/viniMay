@@ -52,4 +52,24 @@ const Contain = styled.div `
     .countShirt{
         color:#171E36;
     }
+
+    @media screen and (max-width: 769px){
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            font-size: 15px;
+        }
+        .userDate{
+            color:#171E36;
+            text-align: left;
+            margin: 0;
+            padding-top:10px;
+        }
+        .us{
+        color:#A8C813;
+        font-size: 10px;
+        margin: 0;
+    }
+    }
 `
