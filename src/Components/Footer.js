@@ -7,20 +7,43 @@ export default function Footer() {
         <Foote>
             <div className='legal'>
                 <h1>LEGAL</h1>
-                <Link to='/condiciones'><p>Condiciones de servicio</p></Link>
-                <Link to='/privacidad'><p>Política de privacidad </p></Link>
+                <ul className='navLink'>
+                    <li>
+                        <Link to='/condiciones'>Condiciones de servicio</Link>
+                    </li>
+                    <li>
+                        <Link to='/privacidad'>Política de privacidad</Link>
+                    </li>
+                    <li>
+                        <Link to='/'>Denunciar una infracción</Link>
+                    </li>
+                </ul>
                 
-                <p>Denunciar una infracción</p>
+                
+                <p></p>
             </div>
             <div className='pab'>
                 <h1>PUBLICIDAD</h1>
-                <p>Comprar anuncios</p>
-                <p>Normas de publicidad </p>
-                <p>Pautas de la marca</p>
+                <ul className='navLink'>
+                    <li>
+                        <Link to='/'>Comprar anuncios</Link>
+                    </li>
+                    <li>
+                        <Link to='/'>Normas de publicidad</Link>
+                    </li>
+                    <li>
+                        <Link to='/'>Pautas de la marca</Link>
+                    </li>
+                </ul>
             </div>
             <div className='pab'>
                 <h1>COMUNIDAD</h1>
-                <p>Preguntas frecuentes</p>
+                <ul className='navLink'>
+                    <li>
+                        <Link to='/'>Preguntas frecuentes</Link>
+                    </li>
+                </ul>
+                <p></p>
             </div>
                 
             
@@ -36,17 +59,52 @@ const Foote = styled.div`
     justify-content: space-between;
     h1{
         color: #fff;
+        margin-left: 40px;
     }
 
-    .legal{
+    .legal {
         color: #fff;
         flex:1;
         display:block;
         text-align:left;
         padding-left: 30px;
+        text-decoration: none;
         /* padding-right: 0px; */
+        outline: none;
     }
     
+    
+    .navLink {
+        text-decoration: none;
+        list-style-type: none;
+        background: transparent;
+        margin: 0;
+        color: #fff;
+
+    }
+
+    li{
+        margin-bottom: 20px;
+
+    }
+
+    .navLink a{
+        text-decoration: none;
+        color: #fff;
+        list-style-type: none;
+        background: transparent;
+
+        &:hover{
+        list-style-type: none;
+            display:block;
+            color: #000;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                background: transparent;
+        }
+      
+    }
     .pab{
         flex:1;
         display:block;

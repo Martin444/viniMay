@@ -49,6 +49,7 @@ const Contain = styled.div `
         font-size: 20px;
         margin: 0;
     }
+    
     .countShirt{
         color:#171E36;
     }
