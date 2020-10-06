@@ -1,4 +1,5 @@
 import React from 'react'
+import { Animated } from 'react-animated-css'
 import Box from '../Components/box'
 import DownCom from '../Components/Community/DownCom'
 import ListShirt from '../Components/Community/ListShirt'
@@ -11,10 +12,19 @@ export default function Comunity() {
     return (
         <div>
             <Box/>
-            <TitleCom/>
-            <ListShirt/>
+            <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
+                
+                <TitleCom/>
+            </Animated>
+            <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
 
-            <Museo/>
+                <ListShirt/>
+            </Animated>
+            <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
+
+                <Museo/>
+            </Animated>
+
             <Questions/>
             <TeamVini/>
             <DownCom/>

@@ -2,9 +2,12 @@ import React from 'react'
 import Nov from '../images/event-4.jpg'
 import Mockup from '../images/mockup-banner.png'
 import AndroidImg from '../images/archivos-05.png'
+
 import IOSImg from '../images/archivos-06.png'
 import styled from 'styled-components'
 import InfoCollection from '../Components/inicio/infoColection'
+
+import { Animated } from 'react-animated-css'
 import Options from '../Components/Options'
 import Download from '../Components/Download'
 import FanMap from '../Components/inicio/FanMap'
@@ -13,6 +16,8 @@ export default function Inicio() {
     return (
         <div className='boar'>
             <DivHome>
+                <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
+                     
                 <div className='content'>
                     <div className='title'>
                         <h1 className='line1'>EL PRIMER</h1>
@@ -26,10 +31,12 @@ export default function Inicio() {
                             <img src={IOSImg} alt='Mockup' className='Ios'/>
                         </div>
                     </div>
+                    
                     <div className='bannerImg'>
                         <img src={Mockup} alt='Mockup' className='ImgMoc'/>
                     </div>
                 </div>
+                </Animated>
             </DivHome>
             <InfoCollection/>
             <Options/>
