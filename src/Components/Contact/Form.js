@@ -3,29 +3,46 @@ import styled from 'styled-components'
 import Mock2 from '../../images/archivos-16.png'
 
 export default function Form() {
+
+    const handleSubmit = (event) =>{
+        event.preventDefault();
+        const form = new FormData(event.target);
+        const newDate = new Date().toISOString();
+
+        const data = {
+            'date' : newDate,
+            'name': form.get('name'),
+            'last': form.get('last'),
+            'description': form.get('mesaje'),
+        }
+    }
+
     return (
         <Formula>
             <div className='for'>
-                <div className='inputCar'>
-                    <p className='hold'>Nombre</p>
-                    <input type='text' placeholder='Escribí aca tu nombre' className='Ip'/>
-                </div>
-                <div className='inputCar'>
-                    <p className='hold'>Nombre</p>
-                    <input type='text' placeholder='Escribí aca tu apellido' className='Ip'/>
-                </div>
-                <div className='inputCar'>
-                    <p className='hold'>Nombre</p>
-                    <input type='text' placeholder='Escribí aca tu mail' className='Ip'/>
-                </div>
-                <div className='inputCar'>
-                    <p className='hold'>Nombre</p>
-                    <input type='text' placeholder='Escribí aca tu mensaje' className='IpM'/>
-                </div>
+                <form onSubmit={handleSubmit}>
 
-                <div>
-                    <button className='btn'>ENVIAR</button>
-                </div>
+                    <div className='inputCar'>
+                        <p className='hold'>Nombre</p>
+                        <input name='name'  type='text' placeholder='Escribí aca tu nombre' className='Ip'/>
+                    </div>
+                    <div className='inputCar'>
+                        <p className='hold'>Nombre</p>
+                        <input name='last' type='text' placeholder='Escribí aca tu apellido' className='Ip'/>
+                    </div>
+                    <div className='inputCar'>
+                        <p className='hold'>Nombre</p>
+                        <input name='email' type='text' placeholder='Escribí aca tu mail' className='Ip'/>
+                    </div>
+                    <div className='inputCar'>
+                        <p className='hold'>Nombre</p>
+                        <input name='mesaje' type='text' placeholder='Escribí aca tu mensaje' className='IpM'/>
+                    </div>
+
+                    <div>
+                        <button className='btn'>ENVIAR</button>
+                    </div>
+                </form>
             </div>
             <div className='imageP'>
             <img src={Mock2} alt='com' className='Img2'/>
