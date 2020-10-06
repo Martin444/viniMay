@@ -17,14 +17,12 @@ export default function TopTen() {
                 </div>
             </div>
             <div className='items'>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
-                <TopItems/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
+                <TopItems count={3} user='Victoria Flores' countShit={200}/>
             </div>
         </Container>
     )

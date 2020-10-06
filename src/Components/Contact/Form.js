@@ -6,15 +6,15 @@ export default function Form() {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        const form = new FormData(event.target);
-        const newDate = new Date().toISOString();
+        // const form = new FormData(event.target);
+        // const newDate = new Date().toISOString();
 
-        const data = {
-            'date' : newDate,
-            'name': form.get('name'),
-            'last': form.get('last'),
-            'description': form.get('mesaje'),
-        }
+        // const data = {
+        //     'date' : newDate,
+        //     'name': form.get('name'),
+        //     'last': form.get('last'),
+        //     'description': form.get('mesaje'),
+        // }
     }
 
     return (

@@ -1,22 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function TopItems() {
+export default function TopItems(props) {
     return (
         <Contain>
             <dic className='position'>
-                <h1>4 -</h1>
+                <h1>{props.count} -</h1>
             </dic>
             <dic className='userDate'>
-                <h1>VICTORIA FLORES </h1>
-                <h1 className='us'>Usuario: VICTORIA FLORES</h1>
+                <h1>{props.user} </h1>
+                <h1 className='us'>Usuario: {props.user}</h1>
             </dic>
             <br/>
             <dic className='row'>
                 <h1>{' >> '}</h1>
             </dic>
             <dic className='countShirt'>
-                <h1> 100 CAMISETAS</h1>
+                <h1> {props.countShirt} CAMISETAS</h1>
             </dic>
         </Contain>
     )

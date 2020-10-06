@@ -5,14 +5,17 @@ import CardShirt from './CardShirt'
 export default function ListShirt() {
     return (
         <Contain>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
-            <CardShirt/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            <CardShirt user='Hola'/>
+            
         </Contain>
     )
 }

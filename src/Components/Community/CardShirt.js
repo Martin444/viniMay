@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Imagen from '../../images/staff-2.jpg'
 
-export default function CardShirt() {
+export default function CardShirt(props) {
     return (
         <Card>
             <div className='infoShirt'>
@@ -10,15 +10,15 @@ export default function CardShirt() {
                <div className='info'>
                    <div>
                         <h2>Usuario</h2>
-                        <p className='Sec'>@Casacarp</p>
+                        <p className='Sec'>{props.user}</p>
                    </div>
                    <div>
                         <h2>Usuario</h2>
-                        <p className='Sec'>@Casacarp</p>
+                        <p className='Sec'>{props.user}</p>
                    </div>
                    <div>
                         <h2>Usuario</h2>
-                        <p className='Sec'>@Casacarp</p>
+                        <p className='Sec'>{props.user}</p>
                    </div>
                 </div>
             </div>
