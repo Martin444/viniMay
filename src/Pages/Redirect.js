@@ -13,6 +13,9 @@ const Redirect = () =>{
         if(isAndroid){
             redirect = `Sistema ${osName} - ruta STORE: ${Android}!`;
             window.location="instagram://user?username=lucasfradusco"
+            setTimeout(() => {
+                window.location=Android
+            }, 10);
         }else if(isIOS){
             window.location="instagram://user?username=lucasfradusco"
             redirect = `Sistema: ${osName} - ruta STORE: ${ios}!`;
