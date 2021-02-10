@@ -9,6 +9,7 @@ import Comunity from './Pages/Comunity';
 import Contact from './Pages/Contact';
 import Terms from './Pages/Terms';
 import Privacity from './Pages/Privacity';
+import Redirect from './Pages/Redirect'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path='/contacto' component={Contact}/>
             <Route exact path='/privacidad' component={Privacity}/>
             <Route exact path='/condiciones' component={Terms}/>
+            <Route exact path='/route' component={Redirect}/>
         </Switch>
         <Follow/>
         <Footer/>
