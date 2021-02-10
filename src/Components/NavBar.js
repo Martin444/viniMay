@@ -32,7 +32,7 @@ export default function NavBar() {
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/route">Home</Link>
                             </li>
                         </button>
                         <button type="button"  
