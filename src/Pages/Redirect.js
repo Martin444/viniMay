@@ -10,17 +10,16 @@ const Redirect = () =>{
     const ios = "https://apps.apple.com/ar/app/vinimay/id1506565366";
     const Android = "https://play.google.com/store/apps/details?id=com.vinimay.app";
     useEffect(() => {
-     
         if(isAndroid){
             redirect = `Sistema ${osName} - ruta STORE: ${Android}!`;
+            window.location="instagram://user?username=lucasfradusco"
         }else if(isIOS){
+            window.location="instagram://user?username=lucasfradusco"
             redirect = `Sistema: ${osName} - ruta STORE: ${ios}!`;
         }else{
             redirect = "browser no soportado";
-            window.location="instagram://user?username=lucasfradusco"
         }
-    
-    }, )
+    },)
     
     let redirect;
 
