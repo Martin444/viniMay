@@ -15,12 +15,16 @@ const Redirect = () =>{
             window.location="instagram://user?username=lucasfradusco"
             setTimeout(() => {
                 window.location=Android
-            }, 2500);
+            }, 1500);
         }else if(isIOS){
             window.location="instagram://user?username=lucasfradusco"
+            setTimeout(() => {
+                window.location=ios
+            }, 1500);
             redirect = `Sistema: ${osName} - ruta STORE: ${ios}!`;
         }else{
             redirect = "browser no soportado";
+            console.log(window.location=Android);
         }
     },)
     
